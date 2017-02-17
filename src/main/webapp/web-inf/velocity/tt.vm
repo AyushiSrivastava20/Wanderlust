@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<section id="main" class="wrapper">
+				<div class="container">
+					<h3>My Trips</h3>
+							
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>City</th>
+											<th>Start Date</th>
+											<th>End Date</th>
+											<th>Total</th>
+										</tr>
+									</thead>
+									<tbody>
+									 #foreach($book in $trip)
+									 <tr>
+									 <td>$book.roomname</td>
+									 <td>$book.roomcity</td>
+									 <td>$book.begin</td>
+									  <td>$book.end</td>
+									 <td>$book.total</td>
+									 
+									 </tr>
+									 #end	
+									</tbody>
+									
+								</table>
+							</div>
+					
+
+				</div>
+			</section>
+</body>
+</html>

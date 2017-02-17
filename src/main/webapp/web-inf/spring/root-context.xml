@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="userValidator" class="com.me.myfinalproject.validator.UserValidator"></bean>
+	<bean id="signuserValidator" class="com.me.myfinalproject.validator.SignuserValidator"></bean>
+	<bean id="roomValidator" class="com.me.myfinalproject.validator.RoomValidator"></bean>
+	<bean id="commentValidator" class="com.me.myfinalproject.validator.CommentValidator"></bean>
+	<bean id="bookingValidator" class="com.me.myfinalproject.validator.BookingValidator"></bean>
+	<bean id="UserDao" class="com.me.myfinalproject.Dao.UserDao"></bean>
+	<bean id="RoomDao" class="com.me.myfinalproject.Dao.RoomDao"></bean>
+	<bean id="CommentDao" class="com.me.myfinalproject.Dao.CommentDao"></bean>
+	<bean id="BookingDao" class="com.me.myfinalproject.Dao.BookingDao"></bean>
+		
+</beans>
